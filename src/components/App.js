@@ -1,9 +1,10 @@
 import React from "react"
+import Header from "./Header.js"
 
-const App = ({ name }) => {
+const App = ({ logo }) => {
   return (
     <div>
-      <h1>{name}</h1>
+      <Header logo={logo} />
     </div>
   )
 }

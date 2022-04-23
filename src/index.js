@@ -1,7 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./components/App.js"
-import "./styles/styles.sass"
+import Genius from "./images/genius-logo.jpg"
+import "./styles/root.sass"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App name="React App" />)
+root.render(<App logo={Genius} />)
