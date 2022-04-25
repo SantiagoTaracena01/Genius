@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap")
+
+$font-color: rgb(255, 255, 255)
+$navbar-color: rgb(0, 0, 0)
+
+.navbar
+  width: 100%
+  height: 45px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $font-color
+  background-color: $navbar-color
+  font-family: "Poppins", "Arial", sans-serif
+  text-align: center
+
+.links-container
+  width: 50%
+  height: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 0.8rem
+  font-weight: bold
+  letter-spacing: 0.1rem
+
+.link-container
+  border-right: 1px solid $font-color
+  border-right-color: $font-color
+  padding-left: 30px
+  padding-right: 30px
+  &:last-child
+    border-right: none
