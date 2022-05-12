@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./components/App.js"
+import App from "./components/App"
 import Genius from "./images/genius-logo.jpg"
 import "./styles/root.sass"
 
