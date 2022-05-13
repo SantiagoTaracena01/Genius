@@ -1,0 +1,80 @@
+$background-hover: rgb(233, 233, 233)
+  
+.chart-song
+  width: 100%
+  height: 80px
+  border-bottom: 3px solid $background-hover
+  display: flex
+  &:hover
+    background-color: $background-hover
+  .chart-song-number
+    width: 5%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1.5rem
+    font-weight: 500
+    line-height: 1.1
+  .chart-song-album-image
+    width: 10%
+    display: flex
+    justify-content: center
+    align-items: center
+    & > img
+      height: 85%
+      object-fit: cover
+  .chart-song-title
+    width: 35%
+    display: flex
+    text-align: left
+    align-items: center
+    & > h3
+      font-size: 1.4rem
+      font-weight: bolder
+      line-height: 1.1
+      padding: 10px 15px 10px 0px
+    & > span
+      font-size: 0.7rem
+      font-weight: bold
+      line-height: 1.1
+      color: rgb(180, 180, 180)
+      letter-spacing: 0.1rem
+  .chart-song-artist
+    width: 25%
+    display: flex
+    text-align: left
+    align-items: center
+    & > h3
+      font-size: 1.4rem
+      font-weight: 500
+      line-height: 1.1
+      padding: 0px 30px
+  .chart-song-trend
+    width: 10%
+    .chart-song-trend-info
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      & > img
+        height: 1.1em
+        object-fit: cover
+        margin-right: 0.25em
+      & > span
+        color: rgb(255, 20, 100)
+        font-size: 0.7rem
+        font-weight: bold
+  .chart-song-views
+    width: 15%
+    display: flex
+    align-items: center
+    justify-content: center
+    & > img
+      height: 1.1em
+      object-fit: cover
+      margin-right: 0.25em
+    & > span
+      font-size: 0.7rem
+      font-weight: bold

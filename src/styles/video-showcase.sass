@@ -1,0 +1,74 @@
+$genius-color: rgb(255, 255, 100)
+  
+.video-showcase
+  width: 80vw
+  min-width: 1000px
+  text-align: center
+  .video-showcase-title
+    font-size: 4.5em
+    color: white
+    font-weight: bold
+    letter-spacing: 0.05em
+    margin-top: 70px
+  .video-showcase-genius-original
+    color: $genius-color
+    font-weight: bold
+    font-size: 0.8em
+    letter-spacing: 0.1em
+  .video-showcase-container
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 40px
+    .video-showcase-content
+      width: 97.5%
+      height: 500px
+      margin-top: 50px
+      display: flex
+      justify-content: left
+      .video-showcase-content-image
+        height: 100%
+        background-color: black
+        background-size: cover
+        background-position: center
+        & > img
+          height: 100%
+      .video-showcase-content-info-container
+        width: 100%
+        display: flex
+        justify-content: right
+        .video-showcase-content-info
+          width: 80%
+          height: 100%
+          text-align: left
+          color: white
+          border-top: 2.5px solid white
+          & > h4
+            font-size: 1.75em
+            font-weight: bold
+            letter-spacing: 0.1em
+            margin-top: 5px
+          & > h5
+            font-size: 1.5em
+            font-weight: 500
+            margin-top: 10px
+            &:hover
+              text-decoration: underline
+              text-decoration-thickness: 1.5px
+              text-underline-offset: 3px
+          & > p
+            font-size: 0.95em
+            font-weight: 500
+            margin-top: 10px
+          .author-info
+            font-size: 0.75em
+            font-weight: 500
+            margin-top: 10px
+            & > span
+              color: rgb(140, 140, 140)
+  .button-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 70px

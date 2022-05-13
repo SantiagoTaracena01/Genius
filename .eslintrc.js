@@ -24,6 +24,7 @@ module.exports = {
     "prefer-arrow-callback": "error",
     "react/function-component-definition": "off",
     "react/prop-types": "off",
+    "react/button-has-type": "off",
     "react/jsx-filename-extension": [1, {
       extensions: [".js", ".jsx"],
     }],
