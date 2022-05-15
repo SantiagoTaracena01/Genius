@@ -1,0 +1,46 @@
+.latest-news-element
+  display: flex
+  flex-direction: column
+  width: 100%
+
+  .latest-news-element-category
+    width: 100%
+    margin-bottom: 10px
+
+    .element-category
+      font-size: 0.65rem
+      letter-spacing: 0.1rem
+
+      &::after
+        content: ""
+        display: inline-block
+        height: 1em
+        vertical-align: bottom
+        width: 80%
+        margin-right: -100%
+        margin-left: 10px
+        border-top: 2.5px solid black
+
+  .latest-news-element-image
+    width: 100%
+    & > img
+      width: 100%
+      object-fit: cover
+
+  .latest-news-element-title
+    margin: 10px 0px
+    & > h1
+      font-weight: 100
+      font-size: 1.3rem
+      &:hover
+        text-decoration: underline
+        text-decoration-thickness: 1.5px
+        text-underline-offset: 3px
+
+  .latest-news-element-info
+    width: 100%
+    & > p
+      font-weight: 100
+      font-size: 0.7rem
+      line-height: 1.1
+      margin-top: 10px
