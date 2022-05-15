@@ -6,6 +6,7 @@ import Dropdown from "./Dropdown"
 import ChartSong from "./ChartSong"
 import Button from "./Button"
 import VideoShowcase from "./VideoShowcase"
+import LatestNewsGrid from "./LatestNewsGrid"
 
 import KendrickImage from "../images/kendrick-the-heart-part-5.jpg"
 import NLEChoppaImage from "../images/nle-choppa.jpg"
@@ -177,6 +178,11 @@ const Main = () => (
     </div>
     <div className="video-showcase-container">
       <VideoShowcase />
+    </div>
+    <h1 className="latest-title">LATEST</h1>
+    <h4 className="most-recent-news-label">MOST RECENT NEWS</h4>
+    <div className="latest-news-grid-container">
+      <LatestNewsGrid />
     </div>
   </div>
 )
