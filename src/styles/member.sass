@@ -1,0 +1,68 @@
+$gray-border-color: rgb(233, 233, 233)
+$pink-font-subcolor: rgb(255, 20, 100)
+  
+.member
+  width: 100%
+  height: 75px
+  border-bottom: 3px solid $gray-border-color
+  display: flex
+  flex-direction: row
+
+  &:hover
+    background-color: $gray-border-color
+
+  .member-rank-container
+    width: 10%
+    height: 100%
+    display: flex
+    align-items: center
+    padding-left: 15px
+    font-size: 1.5rem
+
+  .member-profile-picture-container
+    width: 7.5%
+    height: 100%
+    display: flex
+    align-items: center
+
+    & > img
+      height: 90%
+      object-fit: cover
+      border-radius: 50%
+
+  .member-info-container
+    width: 72.5%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .member-username-container
+      width: 100%
+      height: 60%
+      font-size: 1.5rem
+      text-align: left
+      display: flex
+      align-items: self-end
+
+    .member-role-container
+      width: 100%
+      height: 40%
+      font-size: 0.65rem
+      text-align: left
+      display: flex
+      align-items: start
+      color: rgb(150, 150, 150)
+      font-weight: bold
+      letter-spacing: 0.1rem
+
+  .member-iq-container
+    width: 10%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: right
+    letter-spacing: 0.1rem
+    font-size: 0.75rem
+    font-weight: bold
+    color: $pink-font-subcolor
