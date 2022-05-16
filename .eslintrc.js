@@ -34,5 +34,6 @@ module.exports = {
         allowElseIf: true,
       },
     ],
+    "max-len": ["error", { code: 120 }],
   },
 }

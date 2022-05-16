@@ -7,6 +7,7 @@ import ChartSong from "./ChartSong"
 import Button from "./Button"
 import VideoShowcase from "./VideoShowcase"
 import LatestNewsGrid from "./LatestNewsGrid"
+import CommunityMembers from "./CommunityMembers"
 
 import KendrickImage from "../images/kendrick-the-heart-part-5.jpg"
 import NLEChoppaImage from "../images/nle-choppa.jpg"
@@ -183,6 +184,38 @@ const Main = () => (
     <h4 className="most-recent-news-label">MOST RECENT NEWS</h4>
     <div className="latest-news-grid-container">
       <LatestNewsGrid />
+    </div>
+    <div className="positive-button-container">
+      <Button
+        positive
+        text="LOAD MORE"
+      />
+    </div>
+    <div className="community">
+      <h1 className="community-title">COMMUNITY</h1>
+      <div className="community-description-container">
+        <p className="community-description">
+          GENIUS&apos;S COMMUNITY OF CONTRIBUTORS POWERS THE WORLD&apos;S BIGGEST
+          COLLECTION OF SONG LYRICS AND MUSICAL KNOWLEDGE
+        </p>
+      </div>
+      <div className="community-buttons-container">
+        <Button
+          positive
+          text="JOIN OUR COMMUNITY"
+        />
+        <Button
+          positive
+          text="LEARN HOW GENIUS WORKS"
+        />
+      </div>
+      <CommunityMembers />
+      <div className="positive-button-container">
+        <Button
+          positive
+          text="LOAD MORE"
+        />
+      </div>
     </div>
   </div>
 )
