@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   module: {
     rules: [{
@@ -14,12 +14,12 @@ module.exports = {
       use: {
         loader: "babel-loader",
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"]
-        }
-      }
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        },
+      },
     }, {
       test: /\.sass$/,
-      use: ["style-loader", "css-loader", "sass-loader"]
+      use: ["style-loader", "css-loader", "sass-loader"],
     }, {
       test: /\.(jpeg|png|jpg|svg|gif)$/i,
       loader: "file-loader",
@@ -28,20 +28,20 @@ module.exports = {
         outputPath: "images",
         publicPath: "images",
         emitFile: true,
-        esModule: false
-      }
-    }]
+        esModule: false,
+      },
+    }],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "./src/index.html")
-    })
+      template: path.join(__dirname, "./src/index.html"),
+    }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist")
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    port: 9000
-  }
+    port: 9000,
+  },
 }
